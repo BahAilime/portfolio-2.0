@@ -1,0 +1,35 @@
+<section id="a">
+    <a href="#b">a</a>
+    </section>
+    <section id="b">
+      <a href="#a">b</a>
+    </section>
+
+    <style>
+        * {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+section {
+  height: 100vh
+}
+    </style>
+
+    <script>
+        document.body.onwheel = (event) => {
+            if (event.deltaY < 0)
+ {
+  console.log('scrolling up');
+ }
+    else if (event.deltaY > 0)
+    {
+    console.log('scrolling down');
+    }
+        };
+    </script>

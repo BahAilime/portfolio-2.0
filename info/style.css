@@ -97,3 +97,18 @@ nav h1:hover {
         opacity: 0;
     }
 }
+
+.transition {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #30c0b0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.black {
+    background-color: #161616;
+}

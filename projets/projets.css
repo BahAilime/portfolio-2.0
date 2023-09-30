@@ -2,50 +2,22 @@
     font-family: "Roboto", sans-serif;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 nav,
-.I,
+.intro,
 .scroll-downs {
     opacity: 0;
 }
 
-.accent {
-    color: #30c0b0;
-    font-family: "Great Vibes", cursive;
-}
-
-nav {
-    position: absolute;
-    color: white;
-    top: 20px;
-    left: 20px;
-    display: flex;
-    gap: 10px;
-}
-
-nav h1 {
-    font-size: 1rem;
-    border: rgba(200, 199, 199, 0.1) 1px solid;
-    padding: 10px;
-    border-radius: 50px;
-    transition: background-color linear 100ms;
-}
-
-nav h1:hover {
-    background-color: rgba(203, 203, 203, 0.199);
-    cursor: pointer;
-}
-
 
 .introduction {
-    position: absolute;
     top: 0;
     font-size: 2em;
     color: white;
     background: #30c0b0;
     height: 100vh;
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,4 +68,20 @@ nav h1:hover {
         transform: translateY(15px);
         opacity: 0;
     }
+}
+
+
+.projets {
+    height: 100vh;
+    overflow: hidden;
+    scrollbar-width: 0;
+}
+
+.projets::-webkit-scrollbar {
+    display: none;
+  }
+
+.projets h1 {
+    font-size: 2rem;
+    line-height: 4rem;
 }
